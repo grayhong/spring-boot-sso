@@ -1,7 +1,6 @@
-package com.grayground.server.config
+package com.grayground.server.config.security
 
 import com.grayground.server.repository.UserRepository
-import com.grayground.server.security.EmailLoginUserDetailsServiceAdapter
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider

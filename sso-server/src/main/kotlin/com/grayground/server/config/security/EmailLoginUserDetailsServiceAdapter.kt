@@ -1,8 +1,6 @@
-package com.grayground.server.security
+package com.grayground.server.config.security
 
 import com.grayground.server.repository.UserRepository
-import org.springframework.security.authentication.AuthenticationProvider
-import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UserDetailsService
 
 class EmailLoginUserDetailsServiceAdapter (
