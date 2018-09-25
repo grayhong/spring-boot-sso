@@ -9,11 +9,9 @@ import javax.validation.constraints.NotNull
 import javax.validation.constraints.Size
 
 @Entity
-@Table(name = "EmailUser", schema = "sso")
-open class User : Serializable {
+open class EmailUser : Serializable {
 
-    @NotNull
-    @Column(updatable = false)
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     var id: Long? = null
 
@@ -21,9 +19,9 @@ open class User : Serializable {
     @Size(max = 20)
     var username: String? = null
 
-    @Id
     @NotNull
     @Size(max = 255)
+    @Column(updatable = false, unique = true)
     var email: String? = null
 
     @NotNull
