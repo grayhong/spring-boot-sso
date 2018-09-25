@@ -1,5 +1,6 @@
 package com.grayground.server
 
+import com.grayground.server.config.JpaConfig
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import kotlin.system.exitProcess
@@ -10,7 +11,6 @@ class SsoServerApplication
 fun main(args: Array<String>) {
     try {
         SpringApplication(SsoServerApplication::class.java).run(*args)
-        exitProcess(0)
     } catch (e: Exception) {
         exitProcess(1)
     }
